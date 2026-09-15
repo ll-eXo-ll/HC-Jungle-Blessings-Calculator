@@ -211,6 +211,32 @@ button.budget-active {
             transform: scale(1.05);
         }
 
+        .floating-db-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 195px; /* Shims it exactly to the left of your donate button */
+            background: #111;
+            color: #48d1ff !important; /* Uses your calculator's native light blue theme accent */
+            text-decoration: none !important;
+            font-family: sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 10px 16px;
+            border-radius: 50px;
+            border: 1px solid #48d1ff; /* Accent border matching your theme */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            z-index: 3000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+        }
+        .floating-db-btn:hover {
+            background: #1a1a1a;
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(72, 209, 255, 0.5);
+        }
+
         /* --- REVISION 7 GLOBAL COMBAT STATS DASHBOARD --- */
         .stats-dashboard {
             position: fixed;
@@ -342,11 +368,10 @@ const _0x25b758=_0x49e2;(function(_0x57cf50,_0x3b5e93){const _0x3ddf7d=_0x49e2,_
     });
 </script>
 
-    <div class="database-promo-container">
-        <a href="https://github.io" class="db-promo-btn" target="_blank">
-            <span class="db-icon">📚</span> NEW! Hero Database
-        </a>
-    </div>
+<!-- Independent Hero Database Floating Sticker -->
+<a href="https://ll-eXo-ll.github.io/hero-clash-meta-database/" class="floating-db-btn" target="_blank">
+    <span class="db-icon">📚</span> NEW! Hero Database
+</a>
 
 <!-- System Asset Tracker --> <img src="https://exo.goatcounter.com/count?p=/HC-Jungle-Blessings-Calculator/" alt="" style="display: none; visibility: hidden; width: 0; height: 0;" aria-hidden="true">
 
